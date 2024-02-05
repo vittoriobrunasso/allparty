@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animazione AllParty</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Box Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+            <a href="#" class="logo">AllParty</a>
+            <!-- Cart Icon-->
+            <i class='bx bxs-cart-add' id="carta-icon"></i>
+            <div>
+                <input type = "button" value="Login"    id="nav_login"   onclick="window.location.href='login.html'">
+                <input type = "button" value="Account"  id="nav_account" onclick="window.location.href='account.html'">
+            </div>
+            <!--Cart-->
+            <div class="cart">
+                <h2 class="cart-title">Your cart</h2>
+               <!--Content-->
+                <div class="cart-content">
+
+                    <div class="cart-box">
+
+                    </div>
+                </div>
+                <!-- Total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">€0</div>
+                </div>
+                <!-- Buy button -->
+                <button type="button" class="btn-buy" >Buy Now</button>
+
+                <!-- Cart Close -->
+                <i class="bx bx-x" id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+<!-- Shop -->
+<section class="shop container">
+    <h2 class="section-title">Organize your party</h2>
+    <!-- Content -->
+    <div class="shop-content">
+        <!--box 1-->
+        <div class="product-box">
+            <img src="attrazioni/TRENINO.png"   class="product-img"  >
+            <h2 id="img_trenino">TRENINO</h2>
+            <span class="price">300.00€</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+            <!--box 2-->
+            <div class="product-box">
+                <img src="attrazioni/aaab.PNG"   class="product-img" >
+                <h2 class="product-title">Realtà virtuale</h2>
+                <span class="price">400.00€</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+        <!--box 3-->
+        <div class="product-box">
+            <img src="attrazioni/aaac.jpg"   class="product-img" >
+            <h2 class="product-title">Scivolo</h2>
+            <span class="price">150.00€</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+        <!--box 4-->
+        <div class="product-box">
+            <img src="attrazioni/aaad.jpg"   class="product-img">
+            <h2 class="product-title">Vasca con palline</h2>
+            <span class="price">250.00€</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+        <!--box 5-->
+        <div class="product-box">
+            <img src="attrazioni/aaae.jpg"   class="product-img">
+            <h2 class="product-title">Arrampicata gonfiabile</h2>
+            <span class="price">250.00€</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+        <!--box 6-->
+        <div class="product-box">
+            <img src="attrazioni/aaaf.jpg"   class="product-img">
+            <h2 class="product-title">Squalo/Toro meccanico</h2>
+            <span class="price">350.00€</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+        <!--box 7-->
+        <div class="product-box">
+            <img src="attrazioni/aaag.jpg"   class="product-img">
+            <h2 class="product-title">Bubble football</h2>
+            <span class="price">200.00x2€</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+        <!--box 8-->
+        <div class="product-box">
+            <img src="attrazioni/aaah.jpg"   class="product-img">
+            <h2 class="product-title">Laser game</h2>
+            <span class="price">300.00€</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+        <!--box 9-->
+        <div class="product-box">
+            <img src="attrazioni/aaai.jpg"   class="product-img">
+            <h2 class="product-title">Set giochi della hasbro</h2>
+            <span class="price">550.00€</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+        <!--box 10-->
+        <div class="product-box">
+            <img src="attrazioni/aaal.jpg"   class="product-img">
+            <h2 class="product-title">Postazioni giocox4</h2>
+            <span class="price">200.00€</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+        <!--box 11-->
+        <div class="product-box">
+            <img src="attrazioni/aaam.jpg"   class="product-img">
+            <h2 class="product-title">Gonfiabile salterello</h2>
+            <span class="price">120.00€</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+        <!--box 12-->
+        <div class="product-box">
+            <img src="attrazioni/carosello.jpg"   class="product-img">
+            <h2 class="product-title">Carosello</h2>
+            <span class="price">650.00€</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+        <!--box 13-->
+        <div class="product-box">
+            <img src="attrazioni/last.jpg"   class="product-img">
+            <h2 class="product-title">Last one standing</h2>
+            <span class="price">300.00€</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+        <!--box 14-->
+        <div class="product-box">
+            <img src="attrazioni/ruota.jpg"   class="product-img">
+            <h2 class="product-title">Ruota panoramica</h2>
+            <span class="price">300.00€</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+    </div>
+</section>
+
+
+    <!-- JavaScript Client Side -->
+    <script>
+        //shows the navbar based on whether the user is logged in or not
+        window.addEventListener('DOMContentLoaded', function() {
+            showNavbar();
+        });
+    </script>
+<!-- Link to JS-->
+ <script src="js/main.js"></script>
+
+
+
+</body>
+</html>

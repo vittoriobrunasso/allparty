@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Page's title -->
+  <title>PreviewReading</title>
+
+  <!-- Link to manifest and css file -->
+  <link rel = "manifest" href = "manifest.json">
+  <link rel = "stylesheet" type = "text/css" href = "css/style.css">
+  <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <!-- Character encode -->
+  <meta charset="UTF-8">
+
+  <!-- Meta tag for PWA -->
+  <meta name = "viewport"    content = "width = device-width, initial-scale = 1.0">
+  <meta name = "theme-color" content = "white">
+  <meta name = "description" content = "PreviewReading">
+
+  <!--Specific meta tag for IOS -->
+  <link rel="apple-touch-icon" href="images/logo.webp">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="PreviewReading">
+
+  <!-- Specific meta tag for OS Windows -->
+  <meta name="application-name" content="PreviewReading">
+  <meta name="msapplication-TileImage" content="images/144x144.png">
+  <meta name="msapplication-TileColor" content="#cc194b">
+</head>
+<body>
+
+<div id="overlay"></div>
+<div id="hide_review">
+  <div class="box_form box_form_review">
+    <form id = "review_form" method="post">
+      <div class="user_label">
+        <label for="review_title"><input type="text" class="account" id="review_title" name="review_title" required placeholder="Titolo recensione"></label>
+        <label for="review"><textarea class="account" id="review" name="review" required placeholder="Inserisci la tua recensione"></textarea></label>
+        <input type = "submit" class="btn" onclick="writeReview()" value="Recensisci">
+      </div>
+    </form>
+  </div>
+</div>
+  <!-- Navbar --->
+  <nav class="navbar">
+    <input type = "button" value="Home"       id="nav_shop"            onclick="window.location.href ='index.html'">
+    <input type = "button" value="Account"    id="nav_account"         onclick="window.location.href ='account.html'">
+    <input type="button"   value="Richieste"  id="nav_manage_requests" onclick="document.location.href = 'manage_requests.html'">
+  </nav>
+  <!-- Navbar -->
+
+  <div id="shop_spacer">
+    <h1>Cerca qui il libro</h1>
+    <!-- Search bar -->
+    <form id="search_box" method="post">
+      <label for = "search_in"><input type="text" id="search_in" name="search" required placeholder="Libro da ricercare..." oninput="getSuggestions()"></label>
+      <button type="button" id="search_bnt" onclick="searchBook()"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+    <!-- Search bar -->
+  </div>
+
+  <ul id ="suggestion_list"></ul>
+
+  <!-- PDF -->
+  <div id="pdf_hidden">
+    <div id="pdf_container">
+      <div id="shop_elements">
+        <div id="viewer_container">
+          <p id="no_preview"></p>
+          <iframe id="pdf_viewer"></iframe>
+        </div>
+        <div id="preview_data">
+          <div id="preview">
+            <h1>Preview</h1>
+            <p class="explain_text">Abbiamo accuratamente selezionato le parti più rilevanti di questo libro per offrirti un'anteprima approfondita.
+              La nostra intenzione è fornirti un assaggio significativo che ti aiuterà a valutare se questo libro soddisfa o meno le tue esigenze.
+            </p>
+          </div>
+          <div id="book_data_img">
+            <div id="book_space">
+              <img id="preview_image" alt = "img" src = "">
+            </div>
+            <div id="book_data">
+              <div id="name_author">
+                <div id="book_name"  ></div>
+                <div id="book_author"></div>
+              </div>
+              <div id="other_data">
+                <div id="book_type"  ></div>
+                <div id="book_year"></div>
+                <div id="book_page"></div>
+                <div id="book_price" ></div>
+                <div id="previews_manage">
+                  <button id="reviews_btn" onclick="checkReview()">Recensisci il libro</button>
+                </div>
+                <button id="cart_btn" onclick="addBook()"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Reviews -->
+        <div id="reviews_box">
+          <div id="shop_container">
+            <div id="reviews_list"></div>
+            <div class="price_clear_cart">
+              <p class="cart_price" id="no_reviews"></p>
+            </div>
+          </div>
+        </div>
+        <!-- Reviews -->
+      </div>
+    </div>
+  </div>
+  <!-- PDF -->
+
+  <!-- JavaScript Client Side -->
+  <script>
+
+    //checks if the user has access to the page (if he's logged)
+    window.addEventListener('load', function() {
+      checkLogged();
+    });
+
+    //checks if the user has accessed the page by searching a book
+    document.addEventListener('DOMContentLoaded', function () {
+      checkSearch();
+    });
+
+    document.getElementById('overlay').addEventListener('click', function() {
+      document.getElementById('overlay').style.display     = 'none';
+      document.getElementById('hide_review').style.display = 'none';
+    });
+  </script>
+  <!-- JavaScript Client Side -->
+
+  <script defer src="js/jquery.min.js"></script>
+  <script defer src="js/server.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+</html>

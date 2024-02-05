@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Page's title -->
+  <title>PreviewReading</title>
+
+  <!-- Link to manifest and css file -->
+  <link rel = "manifest" href = "manifest.json">
+  <link rel = "stylesheet" type = "text/css" href = "../OneDrive/Desktop/figliolino/Booksnap2/css/style.css">
+  <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <!-- Character encode -->
+  <meta charset="UTF-8">
+
+  <!-- Meta tag for PWA -->
+  <meta name = "viewport"    content = "width = device-width, initial-scale = 1.0">
+  <meta name = "theme-color" content = "white">
+  <meta name = "description" content = "PreviewReading">
+
+  <!--Specific meta tag for IOS -->
+  <link rel="apple-touch-icon" href="../OneDrive/Desktop/figliolino/Booksnap2/images/logo.webp">
+  <meta name="apple-mobile-web-app-capable"          content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title"            content="PreviewReading">
+
+  <!-- Specific meta tag for OS Windows -->
+  <meta name="application-name"         content="PreviewReading">
+  <meta name="msapplication-TitleImage" content="images/144x144.png">
+  <meta name="msapplication-TitleColor" content="#cc194b">
+</head>
+<body>
+  <div id="admin_logout">
+    <h2>ADMIN</h2>
+    <input type = "submit" value="Logout" class="logout_btn" onclick="logout()">
+  </div>
+  <div id="requests_management">
+    <div class="style_cart management_container">
+      <div class="acc_container">
+        <div id="request_form"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    //checks if the user has access to the page (if he's logged)
+    window.addEventListener('load', function() {
+      loadRequest();
+      checkLogged();
+    });
+  </script>
+  <script src="../OneDrive/Desktop/figliolino/Booksnap2/js/jquery.min.js"></script>
+  <script src="../OneDrive/Desktop/figliolino/Booksnap2/js/server.js"></script>
+  <script src="../OneDrive/Desktop/figliolino/Booksnap2/js/main.js"></script>
+</body>
+</html>
