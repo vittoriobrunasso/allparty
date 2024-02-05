@@ -1,0 +1,96 @@
+{
+  "utenti": [
+    {
+      "nome": "",
+      "cognome": "",
+      "username": "",
+      "password": ""
+    },
+    {
+      "nome": "Vittorio",
+      "cognome": "Brunasso",
+      "username": "Cicciobello",
+      "password": "a7b028288bd8cb84792deac8912d5c17f29415df203885a1e1c9e6a8580f6785",
+      "carrello": []
+    },
+    {
+      "nome": "Sabrina",
+      "cognome": "Marino ",
+      "username": "Sabmarino",
+      "password": "e18a1fb67b6dc7453bb80d8448bda87671d4e6f085a373794627085b966917e1",
+      "carrello": []
+    }
+  ],
+  "prodotto": [
+    {
+      "nome": "TRENINO",
+      "prezzo": "300.00",
+      "link": "attrazioni/TRENINO.jpg"
+    },
+    {
+      "nome": "Realtà virtuale",
+      "prezzo": "400.00",
+      "link": "attrazioni/aaab.PNG"
+    },
+    {
+      "nome": "Scivolo",
+      "prezzo": "150.00",
+      "link": "attrazioni/aaac.jpg"
+    },
+    {
+      "nome": "Vasca con palline",
+      "prezzo": "250.00",
+      "link": "attrazioni/aaad.jpg"
+    },
+    {
+      "nome": "Arrampicata gonfiabile",
+      "prezzo": "250.00",
+      "link": "attrazioni/aaae.jpg"
+    },
+    {
+      "nome": "Squalo/Toro meccanico",
+      "prezzo": "350.00",
+      "link": "attrazioni/aaaf.jpg"
+    },
+    {
+      "nome": "Bubble football",
+      "prezzo": "200.00x2",
+      "link": "attrazioni/aaag.jpg"
+    },
+    {
+      "nome": "Laser game",
+      "prezzo": "300.00",
+      "link": "attrazioni/aaah.jpg"
+    },
+    {
+      "nome": "Set giochi della hasbro",
+      "prezzo": "550.00",
+      "link": "attrazioni/aaai.jpg"
+    },
+    {
+      "nome": "Postazioni giocox4",
+      "prezzo": "200.00",
+      "link": "attrazioni/aaal.jpg"
+    },
+    {
+      "nome": "Gonfiabile salterello",
+      "prezzo": "120.00",
+      "link": "attrazioni/aaam.jpg"
+    },
+    {
+      "nome": "Carosello",
+      "prezzo": "650.00",
+      "link": "attrazioni/carosello.jpg"
+    },
+    {
+      "nome": "Last one standing",
+      "prezzo": "300.00",
+      "link": "attrazioni/last.jpg"
+    },
+    {
+      "nome": "Ruota panoramica",
+      "prezzo": "300.00",
+      "link": "attrazioni/ruota.jpg"
+    }
+  ]
+}
