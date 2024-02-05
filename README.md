@@ -1,1 +1,1 @@
-# allpaty
+# allparty
